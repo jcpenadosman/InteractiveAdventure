@@ -42,7 +42,7 @@ class PageController: UIViewController {
             
             storyLabel.attributedText = attributedString
             
-            
+
             if let firstChoice = page.firstChoice {
                 firstChoiceButton.setTitle(firstChoice.title, forState: .Normal)
                 firstChoiceButton.addTarget(self, action: #selector(PageController.loadFirstChoice), forControlEvents: .TouchUpInside)
